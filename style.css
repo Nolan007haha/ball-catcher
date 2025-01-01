@@ -1,0 +1,129 @@
+/* Reset default margins and paddings */
+* {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                /* Body Styling */
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    background-color: #1e1e1e;
+                    color: #ffffff;
+                    overflow: hidden;
+                    position: relative;
+                    height: 100vh;
+                }
+                
+                /* Game Title */
+                h1 {
+                    margin-top: 20px;
+                    font-size: 2.5rem;
+                    color: #00e676;
+                }
+                
+                /* Score Display */
+                #score {
+                    font-size: 1.2rem;
+                    margin: 10px 0;
+                    color: #ffeb3b;
+                }
+                
+                /* Game Container */
+                #game-container {
+                    position: relative;
+                    width: 90%;
+                    max-width: 500px;
+                    height: 80vh;
+                    margin: 0 auto;
+                    background-color: #263238;
+                    border: 2px solid #00e676;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                }
+                
+                /* Router Styling */
+                #router {
+                    position: absolute;
+                    width: 60px;
+                    height: 60px;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #00e676;
+                    border-radius: 50%;
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Router.svg');
+                    background-size: cover;
+                }
+                
+                /* Packet and Virus Styling */
+                .packet, .virus {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-size: cover;
+                    border-radius: 50%;
+                    animation: fall linear infinite;
+                }
+                
+                /* Packet Specific Styling */
+                .packet {
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Data-packet.svg');
+                    background-color: #ffeb3b;
+                }
+                
+                /* Virus Specific Styling */
+                .virus {
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/68/Computer-virus.svg');
+                    background-color: #f44336;
+                }
+                
+                /* Animation for Falling Objects */
+                @keyframes fall {
+                    from {
+                        top: -50px;
+                    }
+                    to {
+                        top: 100%;
+                    }
+                }
+                
+                /* Overlay Screens */
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(30, 30, 30, 0.9);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 10;
+                }
+                
+                /* Hidden Class to Toggle Screens */
+                .hidden {
+                    display: none;
+                }
+                
+                /* Buttons Styling */
+                button {
+                    padding: 15px 30px;
+                    font-size: 1rem;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #00e676;
+                    color: #1e1e1e;
+                    transition: background-color 0.3s ease;
+                }
+                
+                button:hover {
+                    background-color: #00c853;
+                }
+                

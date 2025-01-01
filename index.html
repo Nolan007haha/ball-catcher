@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packet Catcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Packet Catcher</h1>
+    <div id="score">Score: 0 | Level: 1 | High Score: 0</div>
+    <div id="game-container">
+        <div id="router"></div>
+        <!-- Packets and Viruses will be dynamically added here -->
+    </div>
+    <!-- Start Screen -->
+    <div id="start-screen" class="overlay">
+        <h2>Welcome to Packet Catcher!</h2>
+        <p>Use the Left and Right arrow keys to move the router.</p>
+        <button id="start-button">Start Game</button>
+    </div>
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="overlay hidden">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="restart-button">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
